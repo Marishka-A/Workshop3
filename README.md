@@ -35,7 +35,7 @@
 Изучив все переменные я пришла к выводу, что уровень сложности можно увеличивать с помощью увеличения значения самих переменных.
 
 Формула повышения сложности: 
-Level hard = Speed + Left Right Dictance + Chance Direction + Time Between Egg Dragon
+Difficulty = Speed + Left Right Dictance + Chance Direction + Time Between Egg Dragon
 
 ![2023-11-05_15-49-18](https://github.com/Marishka-A/Workshop3/assets/126682278/91c6c92d-da43-408d-a5d6-cfc0eafe57e1)
 
@@ -55,11 +55,32 @@ Level hard = Speed + Left Right Dictance + Chance Direction + Time Between Egg D
 Ход работы: 
 -  Заполнить google-таблицу данными из Python. В Python данные также должны быть визуализированы.
 
+По сделанной уже ранее таблици сложности уровней, я заполнила google-таблицу с помощью кода на Python, предварительно подключив API.
 
+![2023-11-05_19-24-57](https://github.com/Marishka-A/Workshop3/assets/126682278/7e745096-aab3-4855-bc19-83ede52c3e81)
 
   Скрипт:
   ```py
-
+import gspread
+import numpy as np
+gc = gspread.service_account(filename='unitydatascience2-cfc42e20a895.json')
+sh = gc.open("DataSciense")
+speed = 1.00
+timeBetweenEgg = 5.00
+leftRightDist = 10.00
+chanceDir = 0.01
+i = 0
+end = 8
+while i <= end:     
+    i += 1
+    if i == 0:
+        continue
+    else:
+        sh.sheet1.update(('A' + str(i+1)), i)
+        sh.sheet1.update(('B' + str(i+2)), speed*i)
+        sh.sheet1.update(('C' + str(i+2)), leftRightDist+0.5*i)
+        sh.sheet1.update(('D' + str(i+2)), chanceDir+0.003*i)
+        sh.sheet1.update(('E' + str(i+2)), timeBetweenEgg-0.4*i)
 ```
 
 ## Выводы
