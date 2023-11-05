@@ -30,14 +30,14 @@
 
 На скриншоте красной рамной выделены 4 переменные, влияющие на уровень сложности:
 
-![2023-11-05_15-25-42](https://github.com/Marishka-A/Workshop3/assets/126682278/9f84b042-aca1-4d06-874c-3f4f1304e336)
+![2023-11-05_15-25-42](https://github.com/Marishka-A/Workshop3/assets/126682278/bcb645a7-c828-4b30-8d1c-82f2101ff2e5)
 
 Изучив все переменные я пришла к выводу, что уровень сложности можно увеличивать с помощью увеличения значения самих переменных.
 
 Формула повышения сложности: 
 Difficulty = Speed + Left Right Dictance + Chance Direction + Time Between Egg Dragon
 
-![2023-11-05_15-49-18](https://github.com/Marishka-A/Workshop3/assets/126682278/91c6c92d-da43-408d-a5d6-cfc0eafe57e1)
+![2023-11-05_15-49-18](https://github.com/Marishka-A/Workshop3/assets/126682278/2b2552cd-7112-4c4b-ac57-ea06e394c2f3)
 
 
 ## Задание 2:
@@ -47,7 +47,7 @@ Difficulty = Speed + Left Right Dictance + Chance Direction + Time Between Egg D
 
 Скрин из Unity с десятью уровнями, увеличивающимися по сложности изходя из приведенной ранее таблици:
 
-![2023-11-05_16-13-22](https://github.com/Marishka-A/Workshop3/assets/126682278/f266bd14-5aa8-48cc-9d38-3659bcfd6f30)
+![2023-11-05_16-13-22](https://github.com/Marishka-A/Workshop3/assets/126682278/6bae39b5-7b36-40a2-98a8-3c83d384ad77)
 
 Также эти уровни (сцены) придожены к этому репозиторию. Можно ознакомиться с ними изнутри.
 
