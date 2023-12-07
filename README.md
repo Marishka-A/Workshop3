@@ -35,7 +35,7 @@
 Изучив все переменные я пришла к выводу, что уровень сложности можно увеличивать с помощью увеличения значения переменных Speed, Left Right Dictance, Chance Direction и уменьшения переменной Time Between Egg Dragon.
 
 Формула повышения сложности: 
-Difficulty = Speed + Left Right Dictance + Chance Direction + Time Between Egg Dragon
+Difficulty = Speed + Left Right Dictance + Chance Direction - Time Between Egg Dragon
 
 ![2023-11-05_15-49-18](https://github.com/Marishka-A/Workshop3/assets/126682278/2b2552cd-7112-4c4b-ac57-ea06e394c2f3)
 
